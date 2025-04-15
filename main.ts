@@ -20,6 +20,7 @@ basic.forever(function () {
                 wuKong.setAllMotor(-50, -100)
             }
             basic.pause(100)
+            dist = sonarbit.sonarbit_distance(Distance_Unit.Distance_Unit_cm, DigitalPin.P0)
         }
     }
     if (!(pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P2) == 0)) {
